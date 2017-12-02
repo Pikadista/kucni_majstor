@@ -1,0 +1,74 @@
+/***** Header Styles *****/
+
+
+.navbar-nav {
+    display: inline-block;
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+}
+
+.header-contact {
+    display: inline-block;
+}
+
+.navbar-header, .header-contact {
+    width: 15%;
+}
+
+.navbar-nav > li {
+    float: none;
+    display: inline-block;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+
+/***** Header Banner Styles *****/
+
+.container-header-banner {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.65), 
+        rgba(0, 0, 0, 0.65)
+      ),  url('images/header-banner.jpg') no-repeat center;
+    background-size: cover;
+    min-height: 350px;
+}
+
+.header-banner h1 {
+    font-size: 60px;
+    margin-top: 100px;
+    color: #f2f0c9;
+}
+
+
+/***** Home Styles *****/
+
+.home-content {
+    text-align: justify;
+    margin: 40px auto;
+}
+
+
+/***** Footer Styles *****/
+
+footer {
+    background-color: #252525;
+    color: #fff;
+    padding: 40px 0;
+}
+
+footer h3 {
+    margin-top: 0;
+}
+
+.copyright {
+    background-color: #cecece;
+    padding: 10px 0;
+}
+
+.copyright p {
+    margin: 0;
+}
