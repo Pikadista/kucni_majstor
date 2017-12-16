@@ -5,33 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
         <div class="container-fluid">
-            <div class="row">
-                <nav class="navbar navbar-default">
-                    <div class="navbar-header">
-                        <a class="navbar-brand" href="#">Kucni majstor</a>
-                    </div>
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Pocetna</a></li>
-                        <li><a href="#">Odrzavanje higijene</a></li>
-                        <li><a href="#">Tehnicko odrzavanje</a></li>
-                        <li><a href="#">Profesionalno upravljanje</a></li>
-                        <li><a href="#">Korisna dokumenta</a></li>
-                        <li><a href="#">Galerija</a></li>
-                        <li><a href="#">Kontakt</a></li>
-                    </ul>
-                    <div class="header-contact">
-                        <div class="phone"><i class="fa fa-phone" aria-hidden="true"></i>065/64-67-121</div>
-                        <div class="vreme"><i class="fa fa-clock-o" aria-hidden="true"></i>0 - 24h</div>
-                    </div>  
-                </nav>
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"><img src="images/logo-small.png"></a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Navigacija</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
             </div>
-        </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Pocetna</a></li>
+                    <li class="navitem dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Usluge<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Odrzavanje higijene</a></li>
+                            <li><a href="#">Tehnicko odrzavanje</a></li>
+                            <li><a href="#">Profesionalno upravljanje</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Korisna dokumenta</a></li>
+                    <li><a href="#">Galerija</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                </ul>
+            </div>
+            <div class="header-contact">
+                <div class="phone"><i class="fa fa-phone" aria-hidden="true"></i>065/64-67-121</div>
+                <div class="vreme"><i class="fa fa-clock-o" aria-hidden="true"></i>0 - 24h</div>
+            </div>  
+        </nav>
+    </div>
 
 
     <div class="container-header-banner container-fluid">
@@ -82,6 +91,6 @@
 </div>
  
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="js/bootstrap.js"></script>
+<script src="js/bootstrap.js"></script>
 </body>
 </html>

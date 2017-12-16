@@ -1,30 +1,49 @@
 /***** Header Styles *****/
 
-
-.navbar-nav {
-    display: inline-block;
-    margin: 0 auto;
-    width: 70%;
-    text-align: center;
-}
-
 .header-contact {
     display: inline-block;
+    padding: 5px 0;
+    font-size: 18px;
+}
+
+.navbar-default {
+    border: none;
+    background: transparent;
 }
 
 .navbar-header, .header-contact {
     width: 15%;
 }
 
-.navbar-nav > li {
-    float: none;
-    display: inline-block;
+.navbar-header {
+    margin: 0 !important;
+}
+
+.navbar-nav > li > a {
+    line-height: 30px;
 }
 
 .navbar {
     margin-bottom: 0;
+    min-height: 60px;
 }
 
+.navbar-brand {
+    padding: 5px;
+}
+
+.phone i, .vreme i {
+    margin-right: 10px;
+}
+
+.navbar-toggle {
+    background-color: #000;
+    margin-right: 0;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #fff;
+}
 
 /***** Header Banner Styles *****/
 
@@ -71,4 +90,49 @@ footer h3 {
 
 .copyright p {
     margin: 0;
+}
+
+
+
+/***** Responsive Styles *****/
+
+@media screen and (min-width: 768px) {
+    .navbar-nav {
+        float: none;
+    }
+
+    .navbar-nav > li {
+        float: none;
+        display: inline-block;
+    }
+
+    .collapse.navbar-collapse {
+        margin: 0 auto;
+        width: 70%;
+        text-align: center;
+        float: left;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .navbar-header, .header-contact {
+        width: 100%;
+    }
+
+    .header-contact {
+        padding: 15px 0;
+    }
+
+    .navbar-brand {
+        padding: 5px 0 5px 0;
+    }
+
+    .phone {
+        display: inline-block;
+    }
+
+    .vreme {
+        display: inline-block;
+        float: right;
+    }
 }
