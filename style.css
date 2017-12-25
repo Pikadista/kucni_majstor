@@ -1,9 +1,18 @@
 /***** Header Styles *****/
 
+.header-container {
+    background: #036aba;
+    background: -moz-linear-gradient(left, #036aba 0%, #0491dc 100%);
+    background: -webkit-linear-gradient(left, #036aba 0%,#0491dc 100%);
+    background: linear-gradient(to right, #036aba 0%,#0491dc 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#036aba', endColorstr='#0491dc',GradientType=1 );
+}
+
 .header-contact {
     display: inline-block;
     padding: 5px 0;
     font-size: 18px;
+    color: #fff;
 }
 
 .navbar-default {
@@ -21,6 +30,8 @@
 
 .navbar-nav > li > a {
     line-height: 30px;
+    color: #fff;
+    padding: 15px 30px;
 }
 
 .navbar {
@@ -49,9 +60,9 @@
 
 .container-header-banner {
     background: linear-gradient(
-        rgba(0, 0, 0, 0.65), 
-        rgba(0, 0, 0, 0.65)
-      ),  url('images/header-banner.jpg') no-repeat center;
+        rgba(0, 0, 0, 0.25), 
+        rgba(0, 0, 0, 0.25)
+      ),  url('images/NS_Panorama1.jpg') no-repeat center;
     background-size: cover;
     min-height: 350px;
 }
@@ -67,16 +78,29 @@
 
 .home-content {
     text-align: justify;
-    margin: 40px auto;
+    padding: 40px 0;
+}
+
+.content {
+    background: url('images/tools_pattern.jpg') repeat;
+}
+
+.container-main {
+    background: rgba(255, 255, 255, 0.75)
 }
 
 
 /***** Footer Styles *****/
 
 footer {
-    background-color: #252525;
+    background: rgb(3,106,186);
+    background: -moz-linear-gradient(left, rgba(3,106,186,0.0) 0%, rgba(4,145,220,0.9) 100%);
+    background: -webkit-linear-gradient(left, rgba(3,106,186,0.9) 0%,rgba(4,145,220,0.9) 100%);
+    background: linear-gradient(to right, rgba(3,106,186,0.9) 0%,rgba(4,145,220,0.9) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#036aba', endColorstr='#0491dc',GradientType=1 );
     color: #fff;
     padding: 40px 0;
+    border-top: 4px solid #12497f;
 }
 
 footer h3 {
@@ -84,7 +108,7 @@ footer h3 {
 }
 
 .copyright {
-    background-color: #cecece;
+    background-color: #fed500;
     padding: 10px 0;
 }
 
@@ -99,11 +123,22 @@ footer h3 {
 @media screen and (min-width: 768px) {
     .navbar-nav {
         float: none;
+        font-size: 0;
     }
 
     .navbar-nav > li {
         float: none;
         display: inline-block;
+        font-size: 18px;
+        background: #0486d2;
+        background: -moz-linear-gradient(left, #0486d2 0%, #0371c0 100%);
+        background: -webkit-linear-gradient(left, #0486d2 0%,#0371c0 100%);
+        background: linear-gradient(to right, #0486d2 0%,#0371c0 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0486d2', endColorstr='#0371c0',GradientType=1 );
+    }
+
+    .navbar-nav > li a:hover, .navbar-nav > li a:focus, .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+        background: #fed500;
     }
 
     .collapse.navbar-collapse {
